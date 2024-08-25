@@ -4,15 +4,14 @@ import PropTypes from 'prop-types';
 
 function ContactItem({ contact, onDelete }) {
   console.log("typeof:", typeof contact);
-  const { name, number } = contact;
+  const { name, phone } = contact;
 
   return (
     <div className={styles.contactList}>
       <li className={styles.contactItem}>
         <p>
-          {name} : {number}
+          {name} : * Phone: {phone}
         </p>
-        
 
         <button type="button" onClick={onDelete} className={styles.deleteBtn}>
           Delete
@@ -22,8 +21,8 @@ function ContactItem({ contact, onDelete }) {
   );
 }
 ContactItem.propTypes = {
-  contact: PropTypes.array,
-  onDelete: PropTypes.button,
+  contact: PropTypes.object,
+  onDelete: PropTypes.func,
 };
 export default ContactItem;
 

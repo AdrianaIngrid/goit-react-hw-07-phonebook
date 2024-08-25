@@ -8,6 +8,7 @@
         list-style: none;
         /* margin-left:  10px; */
         margin-right: auto;
+        margin: 10px 0;
 }
 p {
 margin: 0;
@@ -36,10 +37,11 @@ transform: skewY(30deg); */
 .contactList {
     border: 1px solid black;
     margin: 0 auto;
-    width: 300px;
+    width: 500px;
     align-items: space-evenly;
     height: 30px;
     box-shadow: 5px 5px 15px -6px rgba(0,0,0,0.68);
+ padding: 10px;
    
  
 }
