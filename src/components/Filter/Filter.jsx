@@ -3,6 +3,7 @@ import { MdPersonSearch } from 'react-icons/md';
 import { useDispatch, useSelector } from 'react-redux';
 import { getFilter } from '../../Redux/selectors';
 import { setFilter } from '../../Redux/filterSlice';
+import React from 'react';
 function Filter() {
   const dispatch = useDispatch();
   const filter = useSelector(getFilter);

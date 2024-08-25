@@ -1,10 +1,19 @@
 .contactItem {
-    color: brown;
-    text-align: center;
-    
-   list-style: none;
-    margin-left:  10px;
-    margin-right: auto;
+        color: brown;
+        text-align: center;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        gap: 30px;
+        list-style: none;
+        /* margin-left:  10px; */
+        margin-right: auto;
+}
+p {
+margin: 0;
+flex-grow: 1;
+text-align: left;
+
 }
 .deleteBtn {
 align-items: center;
@@ -12,8 +21,25 @@ border: none;
 margin-left: 10px;
 cursor: pointer;
 border-radius: 5px;
+width: 50px;
+height: 20px;
+color: white;
+background-color: brown;
 }
 .deleteBtn:hover {
 background-color: rgb(124, 158, 61);
+/* transform: scale(1, 1.2);
+transform: skewY(30deg); */
 
+
+}
+.contactList {
+    border: 1px solid black;
+    margin: 0 auto;
+    width: 300px;
+    align-items: space-evenly;
+    height: 30px;
+    box-shadow: 5px 5px 15px -6px rgba(0,0,0,0.68);
+   
+ 
 }

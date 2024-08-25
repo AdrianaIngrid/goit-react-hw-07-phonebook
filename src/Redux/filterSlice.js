@@ -5,7 +5,7 @@ const intitialFilterState = '';
     name: 'filter',
     initialState: intitialFilterState,
     reducers: {
-         setFilter: (state, action) => action.payload,
+         setFilter: (_, action) => action.payload,
      },
 });
 export const { setFilter } = filterSlice.actions;
